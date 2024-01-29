@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"a42b76637762a241","x":-539,"y":-480,"width":1219,"height":300,"color":"4","type":"group","label":"Pool"},
+		{"id":"379fbf6451a16217","type":"text","text":"Vault","x":-120,"y":0,"width":250,"height":60,"color":"1"},
+		{"id":"274f2451f83f4541","type":"text","text":"NOTES:\n🟥 - for singleton\n🟩 - for multiple instances","x":-580,"y":120,"width":250,"height":190},
+		{"id":"4006ace215686fc9","x":-120,"y":-260,"width":250,"height":60,"color":"4","type":"text","text":"Pools"},
+		{"id":"97fa3959cf3d53db","x":-519,"y":-260,"width":250,"height":60,"color":"4","type":"text","text":"Tokens"},
+		{"id":"d19e51335e9701f3","x":-519,"y":-460,"width":250,"height":60,"color":"4","type":"text","text":"AssetManager\n"},
+		{"id":"8f1ab2dace078a6e","x":300,"y":-261,"width":250,"height":60,"type":"text","text":"Cash"},
+		{"id":"03f13cd654ca1e40","x":-172,"y":-460,"width":250,"height":60,"type":"text","text":"Managed"},
+		{"id":"c0d9ca58d56cd8e4","x":182,"y":-449,"width":250,"height":60,"type":"text","text":"Total Pool Balance"}
+	],
+	"edges":[
+		{"id":"935ee42cf9e51f06","fromNode":"379fbf6451a16217","fromSide":"top","toNode":"4006ace215686fc9","toSide":"bottom"},
+		{"id":"1d1eeb14144094a6","fromNode":"4006ace215686fc9","fromSide":"left","toNode":"97fa3959cf3d53db","toSide":"right"},
+		{"id":"e86f247592c9e4c7","fromNode":"97fa3959cf3d53db","fromSide":"top","toNode":"d19e51335e9701f3","toSide":"bottom"},
+		{"id":"85c4e2b7e613b176","fromNode":"4006ace215686fc9","fromSide":"right","toNode":"8f1ab2dace078a6e","toSide":"left"},
+		{"id":"6eebabf974f9a8c9","fromNode":"379fbf6451a16217","fromSide":"right","toNode":"8f1ab2dace078a6e","toSide":"bottom"},
+		{"id":"760214bd48c520fe","fromNode":"d19e51335e9701f3","fromSide":"right","toNode":"03f13cd654ca1e40","toSide":"left"},
+		{"id":"b161db1179374a0e","fromNode":"03f13cd654ca1e40","fromSide":"right","toNode":"8f1ab2dace078a6e","toSide":"top"},
+		{"id":"cbfdb2c33da49426","fromNode":"8f1ab2dace078a6e","fromSide":"top","toNode":"03f13cd654ca1e40","toSide":"right","label":"Total pool balance"},
+		{"id":"c2f37bb01f94d736","fromNode":"4006ace215686fc9","fromSide":"top","toNode":"c0d9ca58d56cd8e4","toSide":"bottom"}
+	]
+}

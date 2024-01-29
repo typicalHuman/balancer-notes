@@ -1,0 +1,5 @@
+https://docs.balancer.fi/concepts/pools/managed.html#overview
+
+Each token registered for a Pool can be assigned an Asset Manager, which is able to freely withdraw the Pool's tokens from the Vault, deposit them, or assign arbitrary values to its `managed` balance (see `getPoolTokenInfo`). This makes them extremely powerful and dangerous. Even if an Asset Manager only directly controls one of the tokens in a Pool, a malicious manager could set that token's balance to manipulate the prices of the other tokens, and then drain the Pool with swaps. The risk of using Asset Managers is therefore not constrained to the tokens they are managing, but extends to the entire Pool's holdings.
+
+Pools can choose not to assign an Asset Manager to a given token by passing in the zero address. Once an Asset Manager is set, it cannot be changed except by deregistering the associated token and registering again with a different Asset Manager.
