@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"2d9336a9d1b668b7","type":"group","x":-1330,"y":-161,"width":2660,"height":768,"color":"6","label":"Vault"},
+		{"id":"b11e66b3be396b75","type":"text","text":"```javascript\nfunction exitPool(\n        bytes32 poolId,\n        address sender,\n        address payable recipient,\n        ExitPoolRequest memory request\n    )\n```","x":-1310,"y":93,"width":588,"height":191},
+		{"id":"fd4ebfc0edb29a9f","type":"text","text":"# Pool\n```javascript\n function onExitPool(\n        bytes32 poolId,\n        address sender,\n        address recipient,\n        uint256[] memory balances,\n        uint256 lastChangeBlock,\n        uint256 protocolSwapFeePercentage,\n        bytes memory userData\n    )\n```","x":383,"y":-607,"width":405,"height":340,"color":"5"},
+		{"id":"10fcfb5c31e8a996","type":"text","text":"Specialization balance update","x":890,"y":533,"width":303,"height":50},
+		{"id":"bc9e759064f0eb73","type":"text","text":"```javascript\nfunction _joinOrExit(\n        PoolBalanceChangeKind kind,\n        bytes32 poolId,\n        address sender,\n        address payable recipient,\n        PoolBalanceChange memory change\n    )\n```","x":-530,"y":79,"width":436,"height":220},
+		{"id":"d7aaaeaec034aa4b","type":"text","text":"```javascript\nfunction _processExitPoolTransfers(\n        address payable recipient,\n        PoolBalanceChange memory change,\n        bytes32[] memory balances,\n        uint256[] memory amountsOut,\n        uint256[] memory dueProtocolFeeAmounts\n    ) \n```","x":609,"y":71,"width":459,"height":228},
+		{"id":"2a1cb6a2652be18d","type":"text","text":"```javascript\nfunction _callPoolBalanceChange(\n        PoolBalanceChangeKind kind,\n        bytes32 poolId,\n        address sender,\n        address payable recipient,\n        PoolBalanceChange memory change,\n        bytes32[] memory balances\n    )\n```","x":0,"y":68,"width":410,"height":242}
+	],
+	"edges":[
+		{"id":"9b7e2c2fb268fa79","fromNode":"b11e66b3be396b75","fromSide":"right","toNode":"bc9e759064f0eb73","toSide":"left"},
+		{"id":"f62fefec46033b73","fromNode":"2a1cb6a2652be18d","fromSide":"right","toNode":"fd4ebfc0edb29a9f","toSide":"bottom"},
+		{"id":"52aa521741193436","fromNode":"2a1cb6a2652be18d","fromSide":"right","toNode":"d7aaaeaec034aa4b","toSide":"left"},
+		{"id":"6dd37acd2e682b91","fromNode":"bc9e759064f0eb73","fromSide":"right","toNode":"2a1cb6a2652be18d","toSide":"left"},
+		{"id":"eb5f3a9b41508b9c","fromNode":"bc9e759064f0eb73","fromSide":"bottom","toNode":"10fcfb5c31e8a996","toSide":"left"}
+	]
+}
